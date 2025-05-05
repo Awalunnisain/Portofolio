@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me - Awalun Nisa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-[#1f2937] text-white font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-black">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center py-4">
+        <div class="text-2xl font-bold">AWALUN NISA</div>
+        <div class="hidden md:flex space-x-6 text-lg">
+          <a href="home.html" class="hover:text-blue-400">Home</a>
+          <a href="aboutme.html" class="text-blue-400 font-semibold">About Me</a>
+          <a href="skills.html" class="hover:text-blue-400">Skill</a>
+          <a href="certificate.html" class="hover:text-blue-400">Certificate</a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 pb-4">
+        <a href="home.html" class="block hover:text-blue-400">Home</a>
+        <a href="aboutme.html" class="block text-blue-400 font-semibold">About Me</a>
+        <a href="skills.html" class="block hover:text-blue-400">Skill</a>
+        <a href="certificate.html" class="block hover:text-blue-400">Certificate</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+      <!-- Foto Profil -->
+      <img src="image/wawa.jpg" alt="Awalun Nisa" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full shadow-lg" />
+      
+      <!-- Deskripsi -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Awalun Nisa' Isro'in Nazilla</h2>
+        <p class="text-lg leading-relaxed text-gray-200">
+          I am a motivated and enthusiastic Computer and Network Engineering (TKJ) student at SMKN 1 Nglegok. I have a strong foundation in networking, IT support, and cybersecurity, with experience in network configuration and hardware maintenance. I am looking for an internship opportunity to apply my technical knowledge, problem-solving skills, and teamwork abilities while gaining valuable experience in the IT industry.
+        </p>
+      </div>
+    </div>
+  </section>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<!-- Sosmed Container -->
+<div class="flex items-start justify-center h-screen bg-gray-800">
+  <div class="flex space-x-8 text-white text-lg mt-12">
+    
+    <a href="https://wa.me/6285704412030" target="_blank"
+       class="flex items-center space-x-2 hover:text-blue-400 transition duration-300">
+      <i class="fab fa-whatsapp text-xl"></i>
+      <span>WhatsApp</span>
+    </a>
+    
+    <a href="https://instagram.com/awalun_nisaa" target="_blank"
+       class="flex items-center space-x-2 hover:text-blue-400 transition duration-300">
+      <i class="fab fa-instagram text-xl"></i>
+      <span>Instagram</span>
+    </a>
+    
+    <a href="mailto:awalun.nisa127@gmail.com"
+       class="flex items-center space-x-2 hover:text-blue-400 transition duration-300">
+      <i class="fas fa-envelope text-xl"></i>
+      <span>Gmail</span>
+    </a>
+    
+    <a href="https://linkedin.com/in/awalun-nisa-767211297" target="_blank"
+       class="flex items-center space-x-2 hover:text-blue-400 transition duration-300">
+      <i class="fab fa-linkedin text-xl"></i>
+      <span>LinkedIn</span>
+    </a>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="fixed bottom-0 w-full bg-black text-center py-4 text-gray-400 text-sm z-30">
+    <div>
+      &copy; 2025 Awalun Nisa. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+  <!-- Script for mobile menu -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggleBtn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
